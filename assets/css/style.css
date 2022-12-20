@@ -1,11 +1,11 @@
 @font-face {
     font-family: "DSFont";
-    src: url("../fonts/OptimusPrinceps.ttf") t; 
+    src: url("/assets/fonts/OptimusPrinceps.ttf"); 
     }
 
 @font-face {
     font-family: "DSFontBold";
-    src: url("assets/fonts/OptimusPrincepsSemiBold.ttf");
+    src: url("/assets/fonts/OptimusPrincepsSemiBold.ttf");
     }
 
 body {
