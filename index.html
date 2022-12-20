@@ -18,11 +18,29 @@
   </head>
   <body>
     <div class="container text-center">
+
+    	<div class="row">
+    		<div style="height: 200px;">
+    			<h1>Welcome to <span class="server-title text-warning"></span> Server </h1>
+    			<hr>
+
+            <a
+              class="btn btn-info invite-link"
+              class="discord--link"
+              target="_blank"
+              >Join Server Kami
+            </a>
+
+    		</div>
+
+    	</div>
+
+
       <div class="row">
         <div class="col-sm-4">
           <div class="channels">
             <div class="channels--header">
-              <h1>Channels :</h1>
+              <h2>Channels :</h2>
             </div>
             <div class="channels--body">
               <ul class="list-group"></ul>
@@ -34,7 +52,7 @@
           </div>
         </div>
         <div class="col-sm-8">
-          <h3 class="text-success">User yg lagi onlen :</h3>
+          <h2 >User yg lagi onlen :</h2>
           <hr />
           <div class="d-flex flex-wrap" id="user_list"></div>
 
@@ -55,12 +73,7 @@
           <div class="name"></div>
 
           <div class="discord">
-            <a
-              class="btn btn-info invite-link"
-              class="discord--link"
-              target="_blank"
-              >Join Server Kami
-            </a>
+
           </div>
         </div>
 
@@ -120,6 +133,7 @@
       success: function (ok) {
         // let data = JSON.parse(ok);
         document.title = ok.name;
+        $('.server-title').html(ok.name);
         $(".invite-link").attr("href", ok.instant_invite);
         var bot_list = [
           "Maki",
