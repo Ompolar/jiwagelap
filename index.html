@@ -95,24 +95,12 @@
       </div>
     </script>
 
-    <script id="daftar_user_discord_onlen_in_game_bot" type="text/template">
-      <div class="col-sm-6 col-md-4">
-      	<div class="thumbnail" style="height: 180px; width: 100px;">
-      	<img class="img-thumbnail" width="80px" heigh="80px" src="%src_gambar%" alt="...">
-      	<div class="caption">
-      		<p>%nama_user%</p>
-      		<p class="text-muted"> %nama_game%</p>
-      	</div>
-      	</div>
-      </div>
-    </script>
     <script id="daftar_user_discord_onlen_bot" type="text/template">
-      <div class="col-sm-6 col-md-4">
-      	<div class="thumbnail" style="height: 180px; width: 100px;">
-      	<img class="img-thumbnail" width="80px" heigh="80px" src="%src_gambar%" alt="...">
-      	<div class="caption">
-      		<p>%nama_user%</p>
-      	</div>
+      <div class="col-3">
+      	<div class="thumbnail" style="height: 80px; width: 80px;">
+      	<img data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title=" %nama_user%" class="img-thumbnail" width="80px" heigh="80px" src="%src_gambar%" alt="...">
       	</div>
       </div>
     </script>
@@ -149,22 +137,12 @@
         $.each(ok.members, function (key, value) {
           if (bot_list.includes(value.username)) {
             // check apakah user sedang main game
-            if (JSON.stringify(value).includes("game")) {
-              $("#bot_list").append(
-                $("#daftar_user_discord_onlen_in_game_bot")
-                  .html()
-                  .replace(/%src_gambar%/g, value.avatar_url)
-                  .replace(/%nama_user%/g, value.username)
-                  .replace(/%nama_game%/g, value.game.name)
-              );
-            } else {
               $("#bot_list").append(
                 $("#daftar_user_discord_onlen_bot")
                   .html()
                   .replace(/%src_gambar%/g, value.avatar_url)
                   .replace(/%nama_user%/g, value.username)
               );
-            }
           }
 
           if (!bot_list.includes(value.username)) {
@@ -199,13 +177,26 @@
         // $('#oke').html(ok);
       },
     });
+
+
+
   </script>
   <!-- Bootstrap JavaScript -->
+
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
+<script type="text/javascript">
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
+
 </html>
 
 <!-- <iframe src="https://discord.com/widget?id=604606442393042945&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->
