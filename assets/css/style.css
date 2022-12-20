@@ -1,11 +1,11 @@
 @font-face {
     font-family: "DSFont";
-    src: url("/assets/fonts/OptimusPrinceps.ttf"); 
+    src: url("../fonts/OptimusPrinceps.ttf"); 
     }
 
 @font-face {
     font-family: "DSFontBold";
-    src: url("/assets/fonts/OptimusPrincepsSemiBold.ttf");
+    src: url("assets/fonts/OptimusPrincepsSemiBold.ttf");
     }
 
 body {
@@ -24,7 +24,6 @@ p {
 }
 .container {
     color: #fff;
-    max-width: max-content;
     margin: 0 auto;
     text-align: center;
 }
