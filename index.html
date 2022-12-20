@@ -13,6 +13,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css?v=0.1" />
   </head>
@@ -90,7 +92,7 @@
       	<div class="thumbnail">
       	<img class="img-thumbnail borderds" width="200px" heigh="200px" src="%src_gambar%" alt="...">
       	<div class="caption mt-2">
-      		<h3>%nama_user%</h3>
+      		<h3> <i class="fa fa-circle %status_user%" aria-hidden="true"></i> %nama_user%</h3>
       	</div>
       	</div>
       </div>
@@ -170,11 +172,20 @@
                   .replace(/%nama_game%/g, value.game.name)
               );
             } else {
+            	if(value.status == 'online'){
+            	status_user = 'text-success';
+            	}
+            	if(value.status == 'dnd'){
+            		status_user = 'text-warning';
+            	}
+
+
               $("#user_list").append(
                 $("#daftar_user_discord_onlen")
                   .html()
                   .replace(/%src_gambar%/g, value.avatar_url)
                   .replace(/%nama_user%/g, value.username)
+                  .replace(/%status_user%/g, status_user)
               );
             }
           }
