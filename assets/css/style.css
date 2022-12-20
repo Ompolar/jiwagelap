@@ -1,31 +1,31 @@
 @font-face {
-    font-family: "DSFont";
-    src: url("../fonts/OptimusPrinceps.ttf"); 
-    }
+  font-family: "DSFont";
+  src: url("../fonts/OptimusPrinceps.ttf");
+}
 
 @font-face {
-    font-family: "DSFontBold";
-    src: url("assets/fonts/OptimusPrincepsSemiBold.ttf");
-    }
+  font-family: "DSFontBold";
+  src: url("assets/fonts/OptimusPrincepsSemiBold.ttf");
+}
 
 body {
-    background-color: #222 !important;
-    color: #fff;
-    font-family: "DSFont";
+  background-color: #222 !important;
+  color: #fff;
+  font-family: "DSFont";
 }
 h1 {
-    text-align: center;
-    font-size: 48px;
-    margin-top: 50px;
+  text-align: center;
+  font-size: 48px;
+  margin-top: 50px;
 }
 p {
-    font-size: 18px;
-    margin: 20px;
+  font-size: 18px;
+  margin: 20px;
 }
 .container {
-    color: #fff;
-    margin: 0 auto;
-    text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
 }
 /* .button {
     background-color: #333;
