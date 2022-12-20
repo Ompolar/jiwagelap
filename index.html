@@ -13,30 +13,28 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
-<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
 
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css?v=0.1" />
   </head>
   <body>
     <div class="container text-center">
+      <div class="row">
+        <div style="height: 200px">
+          <h1>
+            Welcome to <span class="server-title text-warning"></span> Server
+          </h1>
+          <hr />
 
-    	<div class="row">
-    		<div style="height: 200px;">
-    			<h1>Welcome to <span class="server-title text-warning"></span> Server </h1>
-    			<hr>
-
-            <a
-              class="btn btn-info invite-link"
-              class="discord--link"
-              target="_blank"
-              >Join Server Kami
-            </a>
-
-    		</div>
-
-    	</div>
-
+          <a
+            class="btn btn-info invite-link"
+            class="discord--link"
+            target="_blank"
+            >Join Server Kami
+          </a>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-sm-4">
@@ -47,36 +45,34 @@
             <div class="channels--body">
               <ul class="list-group"></ul>
               <hr />
-              <h3>Bot yg kami pakai :</h3>
+              <h3>NPC 's :</h3>
               <hr />
               <div class="d-flex flex-wrap" id="bot_list"></div>
             </div>
           </div>
         </div>
-        <div class="col-sm-8">
-          <h2 >User yg lagi onlen :</h2>
+        <div class="col-sm-7">
+          <h2 class="font-family fw-bold">User yg lagi online :</h2>
           <hr />
           <div class="d-flex flex-wrap" id="user_list"></div>
 
-          <h3 class="text-success">User yg lagi main gem :</h3>
+          <h3 class="text-success fw-bold">User yg lagi main gayme :</h3>
           <hr />
           <div class="d-flex flex-wrap" id="user_list_game"></div>
         </div>
       </div>
     </div>
 
+    <!-- etc -->
+
     <div class="container">
       <div id="oke"></div>
-
-      =============================================================
 
       <div class="wrap">
         <div class="name--header">
           <div class="name"></div>
 
-          <div class="discord">
-
-          </div>
+          <div class="discord"></div>
         </div>
 
         <div class="row">
@@ -91,8 +87,9 @@
       <div class="col-sm-4 col-6">
       	<div class="thumbnail">
       	<img class="img-thumbnail borderds" width="200px" heigh="200px" src="%src_gambar%" alt="...">
-      	<div class="caption mt-2">
-      		<h3> <i class="fa fa-circle %status_user%" aria-hidden="true"></i> %nama_user%</h3>
+      	<div class="caption mt-1">
+
+      		<h3 class="fs-5"> <i class="fa fa-circle %status_user%" aria-hidden="true"></i> %nama_user%</h3>
       	</div>
       	</div>
       </div>
@@ -102,9 +99,9 @@
       <div class="col-sm-4 col-6">
       	<div class="thumbnail">
       	<img class="img-thumbnail borderds" width="200px" heigh="200px" src="%src_gambar%" alt="...">
-      	<div class="caption mt-2">
-      		<h3>%nama_user%</h3>
-      		<p> %nama_game%</p>
+      	<div class="caption mt-2 onleningame">
+      		<h3 class="fs-5">%nama_user%</h3>
+      		<p class="text-success fw-semibold"> %nama_game%</p>
       	</div>
       	</div>
       </div>
@@ -115,7 +112,7 @@
       	<div class="thumbnail" style="height: 80px; width: 80px;">
       	<img data-bs-toggle="tooltip" data-bs-placement="top"
         data-bs-custom-class="custom-tooltip"
-        data-bs-title=" %nama_user%" class="img-thumbnail" width="80px" heigh="80px" src="%src_gambar%" alt="...">
+        data-bs-title=" %nama_user%" class="img-thumbnail " width="80px" heigh="80px" src="%src_gambar%" alt="...">
       	</div>
       </div>
     </script>
@@ -135,7 +132,7 @@
       success: function (ok) {
         // let data = JSON.parse(ok);
         document.title = ok.name;
-        $('.server-title').html(ok.name);
+        $(".server-title").html(ok.name);
         $(".invite-link").attr("href", ok.instant_invite);
         var bot_list = [
           "Maki",
@@ -172,13 +169,15 @@
                   .replace(/%nama_game%/g, value.game.name)
               );
             } else {
-            	if(value.status == 'online'){
-            	status_user = 'text-success';
-            	}
-            	if(value.status == 'dnd'){
-            		status_user = 'text-warning';
-            	}
-
+              if (value.status == "online") {
+                status_user = "text-success";
+              }
+              if (value.status == "idle") {
+                status_user = "text-warning";
+              }
+              if (value.status == "dnd") {
+                status_user = "text-danger";
+              }
 
               $("#user_list").append(
                 $("#daftar_user_discord_onlen")
