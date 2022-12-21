@@ -82,7 +82,7 @@
 
 
           if(JSON.stringify(value).includes("channel_id")){
-            $('#'+value.channel_id).append('<br><span style="margin-left: 2em;"> <img class="rounded" width="30px" height="30px" src="'+value.avatar_url+'">  '+value.username+'</span>')
+            $('#'+value.channel_id).append('<br><span style="margin-left: 2em;"> <img class="rounded-circle" width="30px" height="30px" src="'+value.avatar_url+'">  '+value.username+'</span>')
           }
 
 
