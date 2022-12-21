@@ -1,17 +1,17 @@
 @font-face {
   font-family: "DSFont";
-  src: url("../fonts/OptimusPrinceps.ttf");
+  src: url("/assets/fonts/OptimusPrinceps.ttf");
 }
 
 @font-face {
   font-family: "DSFontBold";
-  src: url("../fonts/OptimusPrincepsSemiBold.ttf");
+  src: url("/assets/fonts/OptimusPrincepsSemiBold.ttf");
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/Ompolar.github.io/assets/background.jpg");
+  background-image: url("/assets/img/background.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -48,13 +48,18 @@ p {
 .borderds {
   border: 15px solid transparent;
   padding: 1px;
-  border-image-source: url(/Ompolar.github.io/assets/border.png);
+  border-image-source: url(/assets/img/border.png);
   border-image-repeat: repeat;
   border-image-slice: 30;
 }
 
 .onleningame {
   color: gold;
+}
+
+.custom-bg{
+  padding-top: 2em;
+  background: rgba(46, 31, 39, 0.8);
 }
 
 /* .button {
