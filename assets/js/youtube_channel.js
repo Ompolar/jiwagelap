@@ -38,15 +38,27 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
             }
             no++;
         });
-
-
-
-
       },
     });
-
-
-
 });
 
 
+
+
+
+    form_data = {};
+    $.ajax({
+      url: "https://discord.com/api/guilds/604606442393042945/widget.json",
+      type: "GET",
+      data: form_data,
+      error: function (err) {
+        $("#loading").hide();
+        swal("Oops, something went wrong!", null, "error");
+      },
+      success: function (ok) {
+        // let data = JSON.parse(ok);
+        document.title = ok.name;
+        $(".server-title").html(ok.name);
+
+      },
+    });
