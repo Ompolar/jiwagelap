@@ -81,8 +81,18 @@
           }
 
 
+          // kondisi ketika ada user yg nimbrung di dalam voice channel
           if(JSON.stringify(value).includes("channel_id")){
-            $('#'+value.channel_id).append('<br><span style="margin-left: 2em;"> <img class="rounded-circle" width="30px" height="30px" src="'+value.avatar_url+'">  '+value.username+'</span>')
+              const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+              const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+            $('#'+value.channel_id).append('<br><span style="margin-left: 1em;" id="listener-'+value.id+'"> <img class="rounded-circle" width="30px" height="30px" src="'+value.avatar_url+'">  '+value.username+'</span>');
+            if(value.self_mute){
+              $('#listener-'+value.id).append('<i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="lagi matiin mic" style="margin-left:1em;" class="fa fa-microphone-slash text-danger" aria-hidden="true"></i>')
+            }
+            if(value.self_deaf){
+              $('#listener-'+value.id).append('<i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="lagi matiin headset" style="margin-left:1em;" class="fa fa-deaf text-danger" aria-hidden="true"></i>')
+            }
           }
 
 
