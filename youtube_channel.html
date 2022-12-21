@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="./assets/css/style.css?v=0.2" />
+    <link rel="stylesheet" href="./assets/css/style.css?v=0.3" />
 
 
 
@@ -44,10 +44,12 @@
 
 
         <div class="col-sm-12 custom-bg">
-          <h2 class="font-family fw-bold">play list :</h2>
+          <h2 class="font-family fw-bold text-start">play list :</h2>
           <hr />
-          <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-          </iframe>
+          <!-- <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe> -->
+
+          <div id="user_list"></div>
+
 
         </div>
 
@@ -55,32 +57,32 @@
     </div>
 
     <!-- etc -->
+ <script type="text/template" id="template_youtube_channel">
+<div class="card" style="width: 18rem; margin-left:2em;">
 
-    <div class="container">
-      <div id="oke"></div>
+  <img src="%tumbnail%" class="card-img-top" alt="...">
 
-      <div class="wrap">
-        <div class="name--header">
-          <div class="name"></div>
+  <div class="card-body">
+  <p data-bs-toggle="tooltip" data-bs-title="%tgl_tooltip%" class='text-muted'>published : %published%</p>
+    <h5 class="card-title text-success">
 
-          <div class="discord"></div>
-        </div>
+    <a href="%url%" target="__blank"> %judul%</a>
 
-        <div class="row">
-          <div class="col-md-4"></div>
+    </h5>
+  </div>
 
-          <div class="col-md-8"></div>
-        </div>
-      </div>
-    </div>
+</div>
 
 
+ </script>
 
 
 
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-
-
   <!-- Bootstrap JavaScript -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
