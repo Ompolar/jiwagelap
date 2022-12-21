@@ -28,7 +28,7 @@ $.each(channel_id_youtube_list, function (key_channel, value_channel) {
       var no = 1;
       $.each(ok.items, function (key, value) {
         console.log(value);
-        if (no <= 4) {
+        if (no <= 6) {
           const tooltipTriggerList = document.querySelectorAll(
             '[data-bs-toggle="tooltip"]'
           );
