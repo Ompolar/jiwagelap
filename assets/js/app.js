@@ -1,5 +1,4 @@
 
-
     form_data = {};
     $.ajax({
       url: "https://discord.com/api/guilds/604606442393042945/widget.json",
