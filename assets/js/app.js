@@ -104,3 +104,8 @@
         // $('#oke').html(ok);
       },
     });
+
+
+$(document).ready(function(){
+  $('#load_souls_news').load('/components/souls_news.html');
+});
