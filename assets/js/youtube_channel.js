@@ -2,6 +2,7 @@
 const channel_id_youtube_list = {
   Reka: "UCeF7_Y1UhBCkZ56pb-Z-ASA",
   Lothricel: "UCxrW-_FCRUl1KMmMSDVXH3g",
+  Alan: "UCYX3GSPUSM3SRUlBY4axrjA",
 };
 
 $.each(channel_id_youtube_list, function (key_channel, value_channel) {
