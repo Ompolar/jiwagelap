@@ -8,9 +8,6 @@ semua kalangan dipersilahkan.
 
 link untuk join : https://discord.gg/9kkx6PM
 
-
-
-
-
 ### kontribusi
+
 jika ada yg ingin berkontribusi, bisa langsung saja post di server, entah itu sekedar ide, atau juga bisa langsung pull request.
