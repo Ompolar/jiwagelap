@@ -33,7 +33,7 @@ $.ajax({
     // daftar channel
     $.each(ok.channels, function (key, value) {
       $(".list-group").append(
-        '<li class="list-group-item text-start"> <i class="fa fa-volume-up" aria-hidden="true"></i> ' +
+        '<li class="list-group-item bg-black text-start" style="color:lightgrey"> <i class="fa fa-volume-up" aria-hidden="true"></i> ' +
           value.name +
           '<span id="' +
           value.id +
