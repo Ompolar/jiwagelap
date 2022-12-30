@@ -17,6 +17,8 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css?v=0.3" />
+<script src="https://unpkg.com/scrollreveal"></script>
+
   </head>
   <body>
     <div class="container">
@@ -24,7 +26,7 @@
         <div class="col-12">
           <h1>
             Selamat Datang Di
-            <span class="server-title text-warning"></span> Server
+            <span class="server-title text-warning ntaps"></span> Server
           </h1>
           <hr />
         </div>
@@ -56,7 +58,7 @@
             <h3>Gim Gratisan</h3>
             <hr />
             <a
-              class="twitter-timeline"
+              class="twitter-timeline ntaps"
               data-height="800"
               data-theme="dark"
               href="https://twitter.com/GrabFreeGames"
@@ -66,7 +68,7 @@
 
             <div class="  text-start" style="background: rgba(0, 0, 0, 0.3);">
 
-              <h3> <i class="fa fa-book" aria-hidden="true"></i> Animu update</h3>
+              <h3 class="ntaps"> <i class="fa fa-book" aria-hidden="true"></i> Animu update</h3>
               <hr />
               <div id="load_animu_update"></div>
             </div>
@@ -97,7 +99,7 @@
 
     <script id="daftar_user_discord_onlen" type="text/template">
       <div class="col-sm-4 col-6">
-      	<div class="thumbnail">
+      	<div class="thumbnail ntaps">
       	<img class="img-thumbnail borderds" width="200px" heigh="200px" src="%src_gambar%" alt="...">
       	<div class="caption mt-1">
 
@@ -109,7 +111,7 @@
 
     <script id="daftar_user_discord_onlen_in_game" type="text/template">
       <div class="col-sm-4 col-6">
-      	<div class="thumbnail">
+      	<div class="thumbnail ntaps">
       	<img class="img-thumbnail borderds" width="200px" heigh="200px" src="%src_gambar%" alt="...">
       	<div class="caption mt-2 onleningame">
       		<h3 class="fs-5">
@@ -123,7 +125,7 @@
 
     <script id="daftar_user_discord_onlen_bot" type="text/template">
       <div class="col-3">
-      	<div class="thumbnail" style="height: 80px; width: 80px;">
+      	<div class="thumbnail ntaps" style="height: 80px; width: 80px;">
       	<img  data-bs-toggle="tooltip" data-bs-placement="top" title="%nama_user%"
         class="img-thumbnail " width="80px" heigh="80px" src="%src_gambar%" alt="..."
         >
@@ -132,7 +134,7 @@
     </script>
 
     <script id="animu_update_template" type="text/template">
-        <a class="link-light" target="__blank" href="%animu_url%">   %judul%  </a>
+        <a class="link-light ntaps" target="__blank" href="%animu_url%">   %judul%  </a>
         <br>
         <span data-bs-toggle="tooltip" data-bs-title="%tgl_tooltip%" class='text-muted'>%published%</span>
         <hr>
@@ -155,8 +157,13 @@
   ></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>
 
-  <script src="./assets/js/app.js?v=0.5"></script>
+  <script src="./assets/js/app.js?v=0.7"></script>
   <script src="./assets/js/load_navbar.js?v=0.1"></script>
+
+
+<script type="text/javascript">
+  ScrollReveal().reveal('.ntaps', { delay: 1000 });
+</script>
 </html>
 
 <!-- <iframe src="https://discord.com/widget?id=604606442393042945&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> -->

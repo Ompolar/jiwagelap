@@ -34,6 +34,7 @@ $.each(channel_id_youtube_list, function (key_channel, value_channel)  {
 
         // batasi sampai 6 konten saja
         if (no <= 4) {
+          ScrollReveal().reveal('.ntaps', { delay: 1000 });
 
           // script untuk aktivasi tooltip
           const tooltipTriggerList = document.querySelectorAll( '[data-bs-toggle="tooltip"]' );

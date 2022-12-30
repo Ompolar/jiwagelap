@@ -33,7 +33,7 @@ $.ajax({
     // daftar channel
     $.each(ok.channels, function (key, value) {
       $(".list-group").append(
-        '<li class="list-group-item bg-black text-start" style="color:lightgrey"> <i class="fa fa-volume-up" aria-hidden="true"></i> ' +
+        '<li class="list-group-item bg-black text-start ntaps" style="color:lightgrey"> <i class="fa fa-volume-up" aria-hidden="true"></i> ' +
           value.name +
           '<span id="' +
           value.id +
@@ -44,6 +44,7 @@ $.ajax({
 
     // var obj = jQuery.parseJSON(response);
     $.each(ok.members, function (key, value) {
+
       // script untuk tooltip
       var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -95,7 +96,7 @@ $.ajax({
         $("#" + value.channel_id).append(
           '<br><span style="margin-left: 1em;" id="listener-' +
             value.id +
-            '"> <img class="rounded-circle" width="30px" height="30px" src="' +
+            '"> <img class="rounded-circle ntaps" width="30px" height="30px" src="' +
             value.avatar_url +
             '">  ' +
             value.username +
@@ -138,8 +139,9 @@ $(document).ready(function () {
     success: function (ok) {
 
       $.each(ok.items, function (key, value) {
-        console.log(value);
+        // console.log(value);
 
+        ScrollReveal().reveal('.ntaps', { delay: 1000 });
 
           // script untuk aktivasi tooltip
           const tooltipTriggerList = document.querySelectorAll( '[data-bs-toggle="tooltip"]' );

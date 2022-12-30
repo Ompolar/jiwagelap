@@ -17,6 +17,8 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="./assets/css/style.css?v=0.4" />
+<script src="https://unpkg.com/scrollreveal"></script>
+
   </head>
   <body>
     <div class="container">
@@ -34,7 +36,7 @@
 
       <div class="row">
         <div class="col-sm-12 custom-bg">
-          <h2 class="font-family fw-bold text-start">warga yutuber :</h2>
+          <h2 class="font-family fw-bold text-start ntaps">warga yutuber :</h2>
 
 
 <div class="row" id="user_list"> </div>
@@ -49,9 +51,9 @@
     <script type="text/template" id="template_youtube_channel">
       <div class="card borderds" style="width: 18rem; margin-left:2em; background-color:black;">
 
-        <img src="%tumbnail%" class="card-img-top" alt="...">
+        <img src="%tumbnail%" class="card-img-top ntaps" alt="...">
 
-        <div class="card-body">
+        <div class="card-body ">
         <p data-bs-toggle="tooltip" data-bs-title="%tgl_tooltip%" class='text-muted'>published : %published%</p>
           <h5 class="card-title text-success">
 
@@ -72,9 +74,11 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./assets/js/youtube_channel.js?v=0.8"></script>
+    <script src="./assets/js/youtube_channel.js?v=0.9"></script>
     <script src="./assets/js/load_navbar.js?v=0.1"></script>
-
+<script type="text/javascript">
+  ScrollReveal().reveal('.ntaps', { delay: 2000 });
+</script>
 
   </body>
 </html>
