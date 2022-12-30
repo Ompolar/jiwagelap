@@ -9,11 +9,11 @@ const channel_id_youtube_list = {
 
 $.each(channel_id_youtube_list, function (key_channel, value_channel)  {
   $("#user_list").append(
-    "<h1>" +
+    "<div class='col'> <h1>" +
       key_channel +
       '</h1> <hr> <div class="d-flex flex-wrap" id="yutub_vidio_list-' +
       value_channel +
-      '"></div>'
+      '"></div></div>'
   );
 
   form_data = {};
