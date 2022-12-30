@@ -122,3 +122,44 @@ $.ajax({
 $(document).ready(function () {
   $("#load_souls_news").load("/components/souls_news.html");
 });
+
+
+
+  form_data = {};
+  $.ajax({
+    url:
+      "https://api.rss2json.com/v1/api.json?rss_url=https://animekompi.net/feed/",
+    type: "GET",
+    data: form_data,
+    error: function (err) {
+      $("#loading").hide();
+      swal("Oops, something went wrong!", null, "error");
+    },
+    success: function (ok) {
+
+      $.each(ok.items, function (key, value) {
+        console.log(value);
+
+
+          // script untuk aktivasi tooltip
+          const tooltipTriggerList = document.querySelectorAll( '[data-bs-toggle="tooltip"]' );
+          const tooltipList = [...tooltipTriggerList].map( (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)  );
+
+          $("#load_animu_update").append(
+            $("#animu_update_template")
+              .html()
+              .replace(/%judul%/g, value.title)
+              .replace(/%animu_url%/g, value.link)
+              .replace(
+                /%published%/g,
+                moment(value.pubDate, "YYYYMMDD").fromNow()
+              )
+              .replace(/%tgl_tooltip%/g, value.pubDate)
+          );
+
+
+      });
+    },
+  });
+
+

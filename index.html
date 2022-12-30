@@ -55,47 +55,23 @@
             <hr />
             <h3>Gim Gratisan</h3>
             <hr />
-            <!-- <rssapp-imageboard id="CPR8iqdqCevUfXja"></rssapp-imageboard>
-            <script
-              src="https://widget.rss.app/v1/imageboard.js"
-              type="text/javascript"
-              async
-            ></script>
-            <hr /> -->
             <a
               class="twitter-timeline"
               data-height="800"
               data-theme="dark"
-              href="https://twitter.com/FreeGameFinding?ref_src=twsrc%5Etfw"
-              >Tweets by FreeGameFinding</a
+              href="https://twitter.com/GrabFreeGames"
+              >Tweets by GrabFreeGames</a
             >
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
-
-            <h3>Animu update</h3>
             <hr />
 
-            <!-- <rssapp-list id="O85zjXvtdfpmSuC7"></rssapp-list>
-            <script
-              src="https://widget.rss.app/v1/list.js"
-              type="text/javascript"
-              async
-            ></script> -->
-            <a
-              class="twitter-timeline"
-              data-height="800"
-              data-theme="dark"
-              href="https://twitter.com/animetv_jp?ref_src=twsrc%5Etfw"
-              >Tweets by animetv_jp</a
-            >
-            <script
-              async
-              src="https://platform.twitter.com/widgets.js"
-              charset="utf-8"
-            ></script>
+            <div class="  text-start" style="background: rgba(0, 0, 0, 0.3);">
+
+              <h3> <i class="fa fa-book" aria-hidden="true"></i> Animu update</h3>
+              <hr />
+              <div id="load_animu_update"></div>
+            </div>
+
+
           </div>
         </div>
 
@@ -154,7 +130,21 @@
       	</div>
       </div>
     </script>
+
+    <script id="animu_update_template" type="text/template">
+        <a class="link-light" target="__blank" href="%animu_url%">   %judul%  </a>
+        <br>
+        <span data-bs-toggle="tooltip" data-bs-title="%tgl_tooltip%" class='text-muted'>%published%</span>
+        <hr>
+    </script>
+
   </body>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
   <!-- Bootstrap JavaScript -->
@@ -163,8 +153,9 @@
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
   ></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>
 
-  <script src="./assets/js/app.js?v=0.4"></script>
+  <script src="./assets/js/app.js?v=0.5"></script>
   <script src="./assets/js/load_navbar.js?v=0.1"></script>
 </html>
 
