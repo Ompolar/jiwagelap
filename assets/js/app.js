@@ -21,7 +21,7 @@ $.ajax({
       "[,] Shinobu",
       "[?] Dyno",
       "[s/] ServerStats",
-      "Jockie Music (3)",
+      "[.] Jockie",
     ];
 
     var status_user_list = {
