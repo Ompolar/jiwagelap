@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="./my_assets/css/font-awesome.min.css" />
 
     <!-- custom css -->
-    <link rel="stylesheet" href="./my_assets/css/style.css?v=0.3" />
     <script src="https://unpkg.com/scrollreveal"></script>
 
 
@@ -26,3 +25,4 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" href="./my_assets/css/style.css?v=0.3" />
