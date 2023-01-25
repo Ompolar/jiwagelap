@@ -54,8 +54,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
 
-  <!-- Bootstrap JavaScript -->
-
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>
 
   <script src="/my_assets/js/app.js?v=0.8"></script>
