@@ -56,12 +56,14 @@
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>
 
-  <script src="/my_assets/js/app.js?v=0.8"></script>
 
 
 <script type="text/javascript">
   ScrollReveal().reveal('.ntaps', { delay: 1000 });
 </script>
+
+@vite('resources/js/my_app.js')
+
 
 
 </html>
