@@ -1,3 +1,6 @@
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 var form_data = {};
 $.ajax({
   url: "https://discord.com/api/guilds/604606442393042945/widget.json",
@@ -49,9 +52,9 @@ $.ajax({
       var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]')
       );
-      // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-      //   return new bootstrap.Tooltip(tooltipTriggerEl);
-      // });
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
 
       if (bot_list.includes(value.username)) {
         $("#bot_list").append(
@@ -89,9 +92,9 @@ $.ajax({
         const tooltipTriggerList = document.querySelectorAll(
           '[data-bs-toggle="tooltip"]'
         );
-        // const tooltipList = [...tooltipTriggerList].map(
-        //   (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-        // );
+        const tooltipList = [...tooltipTriggerList].map(
+          (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+        );
 
         $("#" + value.channel_id).append(
           '<br><span style="margin-left: 1em;" id="listener-' +
@@ -121,8 +124,6 @@ $.ajax({
 });
 
 
-
-
   var form_data = {};
   $.ajax({
     url:
@@ -141,8 +142,8 @@ $.ajax({
         ScrollReveal().reveal('.ntaps', { delay: 1000 });
 
           // script untuk aktivasi tooltip
-          // const tooltipTriggerList = document.querySelectorAll( '[data-bs-toggle="tooltip"]' );
-          // const tooltipList = [...tooltipTriggerList].map( (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)  );
+          const tooltipTriggerList = document.querySelectorAll( '[data-bs-toggle="tooltip"]' );
+          const tooltipList = [...tooltipTriggerList].map( (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)  );
 
           $("#load_animu_update").append(
             $("#animu_update_template")
