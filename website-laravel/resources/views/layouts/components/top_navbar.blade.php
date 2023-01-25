@@ -17,7 +17,7 @@
                           <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li> --}}
                         <li class="nav-item">
-                          <a class="nav-link" href="/youtube_channel.html">
+                          <a class="nav-link" href="{{ url('/youtube_channel') }}">
                             <i class="fa fa-youtube-play" aria-hidden="true"></i> Channel warga
                           </a>
                         </li>

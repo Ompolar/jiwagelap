@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/bot', [App\Http\Controllers\Filter\BotController::class, 'index'])->name('bot');
+Route::get('/youtube_channel', [App\Http\Controllers\ChannelController::class, 'index'])->name('youtube_channel');
