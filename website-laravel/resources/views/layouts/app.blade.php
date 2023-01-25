@@ -62,8 +62,8 @@
   ScrollReveal().reveal('.ntaps', { delay: 1000 });
 </script>
 
-@vite('resources/js/my_app.js')
 
+@yield('script')
 
 
 </html>

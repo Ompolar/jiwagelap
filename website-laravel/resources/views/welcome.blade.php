@@ -129,11 +129,11 @@
   >
 </div>
 
-
-
-
 @endsection
 
 
 
 
+@section('script')
+@vite('resources/js/my_app.js')
+@endsection
