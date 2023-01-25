@@ -9,7 +9,6 @@
     <!-- custom css -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
 
 
