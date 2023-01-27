@@ -5,11 +5,15 @@ import 'bootstrap';
 
 
 
-import $ from "jquery";
+import $ from 'jquery';
 window.$ = $;
 
 import * as bootstrap from 'bootstrap';
 window.bootstrap = bootstrap;
+
+
+import swal from 'sweetalert';
+
 
 
 

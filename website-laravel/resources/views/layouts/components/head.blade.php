@@ -19,5 +19,4 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    <link rel="stylesheet" href="/my_assets/css/style.css?v=0.3" />
+    @vite(['resources/sass/app.scss', 'resources/css/my_style.css'])

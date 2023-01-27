@@ -6,6 +6,7 @@ export default defineConfig({
         laravel({
             input: [
                 "resources/sass/app.scss",
+                "resources/css/my_style.css",
                 "resources/js/app.js",
                 "resources/js/my_app.js",
                 "resources/js/youtube_channel.js",

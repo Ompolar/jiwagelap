@@ -4,9 +4,9 @@
       <div class="row">
         <div class="col-sm-12 custom-bg">
           <div id="load_navbar"></div>
-          <h2 class="font-family fw-bold text-start mt-3">warga yutuber :</h2>
+          <h1 class="font-family fw-bold text-start mt-3 text-light">warga yutuber :</h1>
 
-          <div class="row" id="user_list"></div>
+          <div class="row text-light" id="user_list"></div>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
 
         <div class="card-body ">
         <p data-bs-toggle="tooltip" data-bs-title="%tgl_tooltip%" class='text-muted'>published : %published%</p>
-          <h5 class="card-title text-success">
+          <h5 class="card-title text-success text-light">
 
           <a href="%url%" target="__blank"> %judul%</a>
 

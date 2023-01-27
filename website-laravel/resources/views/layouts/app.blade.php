@@ -18,25 +18,7 @@
 
 @include('layouts.components.top_navbar')
 
-
-
     <div class="container">
-
-
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-light">
-            Selamat Datang Di
-            <span class="server-title text-warning ntaps"></span> Server
-          </h1>
-
-
-
-
-          <hr />
-        </div>
-      </div>
-
 
         <main class="py-4">
             <div class="row">
@@ -56,7 +38,7 @@
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" ></script>
 
-
+@vite('resources/js/app.js')
 
 <script type="text/javascript">
   ScrollReveal().reveal('.ntaps', { delay: 1000 });

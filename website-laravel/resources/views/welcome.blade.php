@@ -2,11 +2,16 @@
 
 
 @section('content')
-        <div class="col-sm-3 custom-bg" style="padding-top: 4.3em">
-          <hr />
-      <span class="navbar-text  ">
+
+
+
+      <div class="row">
+        <div class="col-12">
+
+      <span class="navbar-text  text-ds pull-right mr-0">
         <a
-          class="btn btn-info invite-link"
+          class="btn btn-info invite-link   display-1 text-black-50 "
+          style="font-size: 30px;"
           class="discord--link"
           target="_blank"
           href="https://discord.gg/9kkx6PM"
@@ -14,7 +19,24 @@
         </a>
       </span>
 
-          <div class="channels">
+
+          <h1 class="text-light fw-bold text-center text-ds">
+            Selamat Datang Di
+            <span class="server-title text-warning ntaps"></span> Server
+          </h1>
+
+
+
+          <hr />
+        </div>
+      </div>
+
+
+
+        <div class="col-sm-3 custom-bg">
+
+
+          <div class="channels text-ds">
             <div class="channels--header">
               <h2 class="text-light">Voice Channels :</h2>
             </div>
@@ -30,7 +52,7 @@
 
           <div style="margin-top: 2em">
             <hr />
-            <h3 class="text-light">Gim Gratisan</h3>
+            <h3 class="text-light text-ds">Gim Gratisan</h3>
             <hr />
             <a
               class="twitter-timeline ntaps"
@@ -43,7 +65,7 @@
 
             <div class="  text-start" style="background: rgba(0, 0, 0, 0.3);">
 
-              <h3 class="text-light" class="ntaps"> <i class="fa fa-book" aria-hidden="true"></i> Animu update</h3>
+              <h3 class="text-light text-ds" class="ntaps"> <i class="fa fa-book" aria-hidden="true"></i> Animu update</h3>
               <hr />
               <div id="load_animu_update"></div>
             </div>
@@ -57,14 +79,14 @@
 
 
 
-          <h2 class="font-family fw-bold text-light">Yang lagi main gim :</h2>
+          <h2 class="font-family fw-bold text-light text-ds">Yang lagi main gim :</h2>
           <hr />
           <div
             class="d-flex flex-wrap"
             id="user_list_game"
             style="margin-bottom: 5em"
           ></div>
-          <h2 class="text-light" class="fw-bold">Yang lagi nyantai :</h2>
+          <h2 class="text-light fw-bold text-ds">Yang lagi nyantai :</h2>
           <hr />
           <div class="d-flex flex-wrap" id="user_list"></div>
         </div>
@@ -85,14 +107,14 @@
     </script>
 
     <script id="daftar_user_discord_onlen_in_game" type="text/template">
-      <div class="col-sm-4 col-6">
+      <div class="col-sm-3 col-6">
         <div class="thumbnail ntaps">
         <img class="img-thumbnail borderds" width="200px" heigh="200px" src="%src_gambar%" alt="...">
         <div class="caption mt-2 onleningame">
             <h3 class="text-light" class="fs-5">
             <i class="fa fa-circle %status_user%" aria-hidden="true"></i>  %nama_user%
           </h3>
-            <p class="fw-semibold" style="color:#ccc;"> %nama_game%</p>
+            <p class="fw-semibold " style="color:#ccc;"> %nama_game%</p>
         </div>
         </div>
       </div>

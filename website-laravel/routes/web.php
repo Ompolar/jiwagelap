@@ -20,5 +20,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/bot', [App\Http\Controllers\Filter\BotController::class, 'index'])->name('bot');
 Route::get('/youtube_channel', [App\Http\Controllers\ChannelController::class, 'index'])->name('youtube_channel');
+
+
+Route::get('/bot', [App\Http\Controllers\Filter\BotController::class, 'index'])->name('bot');
+Route::post('/bot_insert', [App\Http\Controllers\Filter\BotController::class, 'insert'])->name('bot.insert');
+Route::post('/bot_delete', [App\Http\Controllers\Filter\BotController::class, 'delete'])->name('bot.delete');

@@ -1,17 +1,17 @@
 @font-face {
   font-family: "DSFont";
-  src: url("/my_assets/fonts/OptimusPrinceps.ttf");
+  src: url("./fonts/OptimusPrinceps.ttf");
 }
 
 @font-face {
   font-family: "DSFontBold";
-  src: url("/my_assets/fonts/OptimusPrincepsSemiBold.ttf");
+  src: url("./fonts/OptimusPrincepsSemiBold.ttf");
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url("/my_assets/img/background.jpg");
+  background-image: url("./img/background.jpg");
   background-position: center;
 
   background-repeat: no-repeat;
@@ -19,22 +19,13 @@ body {
   background-attachment: fixed;
   scroll-behavior: smooth;
 /*  color: #fff;*/
-  font-family: "DSFont";
 }
-h1 {
-  text-align: center;
-  font-size: 48px;
-  margin-top: 50px;
+.text-ds{
+    font-family: "DSFont";
 }
-p {
-  font-size: 18px;
-  margin: 20px;
-}
-.container {
-/*  color: #fff;*/
-  margin: 0 auto;
-  text-align: center;
-}
+
+
+
 
 .thumbnail {
   padding: 2px;
@@ -49,7 +40,7 @@ p {
 .borderds {
   border: 15px solid transparent;
   padding: 1px;
-  border-image-source: url(/my_assets/img/border.png);
+  border-image-source: url(./img/border.png);
   border-image-repeat: repeat;
   border-image-slice: 30;
 }

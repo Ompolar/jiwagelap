@@ -51,12 +51,17 @@
 
 
                     @if (Route::has('login'))
-                        <li class="nav-item">
+
                             @auth
-                                <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline nav-link text-light">My Profile</a>
+                                <li class="nav-item">
+                                    <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline nav-link text-light">My Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{{ url('/bot') }}" class="text-sm text-gray-700 dark:text-gray-500 underline nav-link text-light">Filter Bots</a>
+                                </li>
 
                              @endauth
-                        </li>
+
                     @endif
 
 
