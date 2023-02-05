@@ -1,7 +1,6 @@
 # Change to the project directory
 cd $SITE_PATH
 cd ..
-ls
 
 npm run build
 # #build assets
