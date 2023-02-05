@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "DSFont";
+  src: url("./fonts/OptimusPrinceps.ttf");
+}
+
+@font-face {
+  font-family: "DSFontBold";
+  src: url("./fonts/OptimusPrincepsSemiBold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./img/background.jpg");
+  background-position: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+/*  color: #fff;*/
+}
+.text-ds{
+    font-family: "DSFont";
+}
+
+
+
+
+.thumbnail {
+  padding: 2px;
+  margin: 2px;
+}
+
+.img-thumbnail {
+  border: solid 2px gold;
+  background-color: black;
+}
+
+.borderds {
+  border: 15px solid transparent;
+  padding: 1px;
+  border-image-source: url(./img/border.png);
+  border-image-repeat: repeat;
+  border-image-slice: 30;
+}
+
+.onleningame {
+  color: gold;
+}
+
+.custom-bg {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: rgba(46, 31, 39, 0.8);
+}
+
+/* .button {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px;
+}
+.button:hover {
+    background-color: #444;
+} */
