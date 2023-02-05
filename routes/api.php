@@ -36,7 +36,7 @@ Route::post('/handle_webhook', function (Request $request) {
     curl_setopt($ch, CURLOPT_POST, 1);
     $curl_data = [
         'username' => env('DISCORD_WEBHOOK_USERNAME'),
-        'content'   => 'test123'
+        'content'   => $output
     ];
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($curl_data));
 
