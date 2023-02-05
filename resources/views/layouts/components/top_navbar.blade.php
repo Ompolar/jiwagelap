@@ -17,14 +17,14 @@
                           <a class="nav-link active" aria-current="page" href="/">Home</a>
                         </li> --}}
                         <li class="nav-item">
-                          <a class="nav-link" href="{{ url('/youtube_channel') }}">
+                          <a class="nav-link text-ds" href="{{ url('/youtube_channel') }}">
                             <i class="fa fa-youtube-play" aria-hidden="true"></i> Channel warga
                           </a>
                         </li>
 
                         <li class="nav-item dropdown">
                           <a
-                            class="nav-link dropdown-toggle"
+                            class="nav-link dropdown-toggle text-ds"
                             href="#"
                             role="button"
                             data-bs-toggle="dropdown"
