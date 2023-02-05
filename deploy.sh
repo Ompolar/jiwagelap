@@ -15,8 +15,8 @@ php artisan down || true
 # git clean -df
 git pull origin $SITE_BRANCH
 
-# Install/update composer dependecies
-composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
+# # Install/update composer dependecies
+# composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
 
 # Restart FPM
 ( flock -w 10 9 || exit 1
