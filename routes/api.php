@@ -31,11 +31,11 @@ Route::post('/handle_webhook', function (Request $request) {
     $ch = curl_init();
 
 
-    curl_setopt($ch, CURLOPT_URL, env('DISCORD_WEBHOOK_URL'));
+    curl_setopt($ch, CURLOPT_URL, config('discord.webhook_url'));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_POST, 1);
     $curl_data = [
-        'username' => env('DISCORD_WEBHOOK_USERNAME'),
+        'username' => config('discord.webhook_username'),
         'content'   => $output
     ];
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($curl_data));
