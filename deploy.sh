@@ -1,6 +1,6 @@
 # Change to the project directory
 cd /home/jiwagelap/apps/jiwagelap
-# cd ..
+cd ..
 
 
 # Turn on maintenance mode
