@@ -59,7 +59,9 @@
                                 <li class="nav-item">
                                     <a href="{{ url('/bot') }}" class="text-sm text-gray-700 dark:text-gray-500 underline nav-link text-light">Filter Bots</a>
                                 </li>
-
+                                <li class="nav-item">
+                                    <a href="{{ url('/yt_notification') }}" class="text-sm text-gray-700 dark:text-gray-500 underline nav-link text-light">Notif Yutub</a>
+                                </li>
                              @endauth
 
                     @endif
