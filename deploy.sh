@@ -1,6 +1,6 @@
 # Change to the project directory
-cd $SITE_PATH
-cd ..
+cd /home/jiwagelap/apps/jiwagelap
+# cd ..
 
 
 # Turn on maintenance mode
@@ -9,7 +9,7 @@ php artisan down || true
 # Pull the latest changes from the git repository
 # git reset --hard
 # git clean -df
-git pull origin $SITE_BRANCH
+git pull origin master
 
 
 npm run build
