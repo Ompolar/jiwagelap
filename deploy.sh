@@ -2,9 +2,6 @@
 cd $SITE_PATH
 cd ..
 
-npm run build
-# #build assets
-# npm run build
 
 # Turn on maintenance mode
 php artisan down || true
@@ -13,6 +10,12 @@ php artisan down || true
 # git reset --hard
 # git clean -df
 git pull origin $SITE_BRANCH
+
+
+npm run build
+# #build assets
+# npm run build
+
 
 # # Install/update composer dependecies
 # composer install --no-interaction --prefer-dist --optimize-autoloader --no-dev
@@ -31,12 +34,15 @@ php artisan cache:clear
 php artisan auth:clear-resets
 
 # Clear and cache routes
+php artisan route:clear
 php artisan route:cache
 
 # Clear and cache config
+php artisan config:clear
 php artisan config:cache
 
 # Clear and cache views
+php artisan view:clear
 php artisan view:cache
 
 # Install node modules
