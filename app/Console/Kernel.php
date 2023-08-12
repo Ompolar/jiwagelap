@@ -15,6 +15,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
+        $schedule->command('jiwagelap:post_youtube_notification')->everyFiveMinutes();
         // $schedule->command('inspire')->hourly();
     }
 
