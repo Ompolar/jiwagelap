@@ -2,7 +2,6 @@
 cd /home/jiwagelap/apps/jiwagelap
 cd ..
 
-
 # Turn on maintenance mode
 php artisan down || true
 
