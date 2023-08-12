@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Bot;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,6 +16,14 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
     }
+
+    public function welcome()
+    {
+        $bot_list = Bot::pluck('bot_name');
+        return view('welcome', compact('bot_list'));
+    }
+
+
 
     /**
      * Show the application dashboard.

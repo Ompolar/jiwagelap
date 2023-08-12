@@ -15,17 +15,8 @@ $.ajax({
     document.title = ok.name;
     $(".server-title").html(ok.name);
     $(".invite-link").attr("href", ok.instant_invite);
-    var bot_list = [
-      "Maki",
-      "Pancake",
-      "ProBot ✨",
-      "[t!] Tatsumaki",
-      "[!] SlugBot",
-      "[,] Shinobu",
-      "[?] Dyno",
-      "[s/] ServerStats",
-      "[.] Jockie",
-    ];
+    let bot_list = JSON.parse($('#bot_list_json').text());
+
 
     var status_user_list = {
       online: "text-success",
@@ -127,7 +118,7 @@ $.ajax({
   var form_data = {};
   $.ajax({
     url:
-      "https://api.rss2json.com/v1/api.json?rss_url=https://animekompi.net/feed/",
+      "https://api.rss2json.com/v1/api.json?rss_url=https://animekompi.cam/feed/",
     type: "GET",
     data: form_data,
     error: function (err) {

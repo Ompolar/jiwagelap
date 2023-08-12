@@ -151,6 +151,11 @@
   >
 </div>
 
+<script id="bot_list_json" type="application/json">
+    {!! $bot_list !!}
+</script>
+
+
 @endsection
 
 
